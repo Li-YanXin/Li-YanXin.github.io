@@ -1,5 +1,5 @@
 # Site settings
-title: Li-Yanxin's Blog
+title: Welcome to Li-Yanxin's Blog
 SEOTitle: 李彦欣的博客 | Li-Yanxin's Blog
 header-img: img/index.jpg
 email: huxpro@gmail.com
@@ -78,7 +78,7 @@ kramdown:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "糖分<br>  is life ! ! !"
+sidebar-about-description: "研二修仙中<br>日常拖延症晚期患者"
 sidebar-avatar: /img/gin.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 

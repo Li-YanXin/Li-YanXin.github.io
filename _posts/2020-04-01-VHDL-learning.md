@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "VHDL学习第一则"
-subtitle:   " \"建立时间与保持时间等\""
+subtitle:   " \"建立时间与保持时间等基本概念\""
 date:       2020-04-01 12:00:00
 author:     "LiYanXin"
 header-img: "img/post-bg-2015.jpg"
