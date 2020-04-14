@@ -31,7 +31,7 @@ VHDL FPGA学习
 
 ## 准备知识2：建立时间与保持时间
   讨论跨时钟域问题，离不开建立时间Tsu和保持时间Thold这两个概念。
-  <div align=center><img width="250" height="250" src="img/in-post/tsu&thold.png"/></div>
+  <div align=center><img width="250" height="250" src="/img/in-post/tsu&thold.png"/></div>
 
   * 建立时间（Tsu：set up time）　　
    是指在触发器的时钟信号上升沿到来以前，数据稳定不变的时间，如果建立时间不够，数据将不能在这个时钟上升沿被稳定的打入触发器，Tsu就是指这个最小的稳定时间。 
@@ -54,12 +54,12 @@ VHDL FPGA学习
     
     FPGA设计中不外乎寄存器加组合逻辑，因此以下面的模型分析时序约束：
     
-    <div align=center><img width="450" height="250" src="img/in-post/DFF_model.png"/></div>
+    <div align=center><img width="450" height="250" src="/img/in-post/DFF_model.png"/></div>
     
     图中存在两个DFF，D1、Q1为DFF1的输入输出，D2、Q2为DFF2的输入输出，Tco为第一级DFF的输出延时，Tsu为第二级DFF的建立时间，Th为第二级DFF的保持时间。它们应该满足什么关系呢？   
 * 建立时间需要满足的条件
     
-    <div align=center><img width="550" height="350" src="img/in-post/Tsu_equation.png"/></div>
+    <div align=center><img width="550" height="350" src="/img/in-post/Tsu_equation.png"/></div>
 
 　　在第一个时钟上升沿，前边的触发器采集D1信号，将高电平打入触发器，经过Tco的触发器输出延时到达组合逻辑电路。又经过组合逻辑电路的延时Tcomb（我们假定组合逻辑电路此时没有改变信号的高低，可以把它假定为一个缓冲器）送到了D2接口上。在第二个时钟上升沿到来之前，**D2数据线上的信号要满足稳定时间>触发器的建立时间Tsu**。
    <div align=center> Tclk - Tco - Tcomb > Tsu </div>  
@@ -69,7 +69,7 @@ VHDL FPGA学习
     
  * 保持时间需要满足的条件  
     
-    <div align=center> <img width="550" height="350" src="img/in-post/Th_equation.png"/> </div>    
+    <div align=center> <img width="550" height="350" src="/img/in-post/Th_equation.png"/> </div>    
     
 　　相对于建立时间，保持时间比较难理解，其实质是前一级DFF的输出不能太快在当前沿到达DFF2。为防止DFF1采到的新数据太快到达DFF2而“冲掉”原来的正确数据，数据必须要在一定时间之后才允许到达，所以保持时间分析，分析的是DFF1和DFF2的同一个时钟沿。  
     
@@ -91,7 +91,7 @@ VHDL FPGA学习
   
  * 加入时钟延迟的模型
  
-   <div align=center> <img width="550" height="350" src="img/in-post/model_add_time_skew.jpg"/> </div>    
+   <div align=center> <img width="550" height="350" src="/img/in-post/model_add_time_skew.jpg"/> </div>    
     
 　　若存在时钟延迟，可以看出 Tskew 使建立时间的条件变松，而保持时间的条件变紧。总之，**建立时间和保持时间的条件是对立的**。  
 　　此时的公式变为：  
