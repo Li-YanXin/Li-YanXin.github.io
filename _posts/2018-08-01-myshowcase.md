@@ -19,7 +19,7 @@ tags:
  
 当时守着海报，在现场对熙熙攘攘同学、老师以及学校提前指派的检查老师不断介绍自己的项目，大概说了不下30遍。也听了其他同学非常优秀的毕业设计作品，感触良多。
 
-  <img width="550" height="450" src="/img/in-post/showcase_3.jpg">>
+  <img width="550" height="450" src="/img/in-post/showcase_3.jpg">
 
 Showcase现场，大家热情都很高。
 
