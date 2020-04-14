@@ -15,15 +15,15 @@ tags:
 
 贴一张我最终现场做Showcase的海报。
 
-<div align=center><img width="550" height="450" src="../../img/in-post/myposter.jpg"/></div>
+<div align=center><img width="550" height="450" src="../img/in-post/myposter.jpg"/></div>
 
 当时守着海报，在现场对熙熙攘攘同学、老师以及学校提前指派的检查老师不断介绍自己的项目，大概说了不下30遍。也听了其他同学非常优秀的毕业设计作品，感触良多。
 
-<div align=center><img width="550" height="450" src="../../img/in-post/showcase_3.jpg"/></div>
+<div align=center><img width="550" height="450" src="../img/in-post/showcase_3.jpg"/></div>
 
 Showcase现场，大家热情都很高。
 
-<div align=center><img width="550" height="450" src="../../img/in-post/showcase_1.jpg"/></div>
+<div align=center><img width="550" height="450" src="../img/in-post/showcase_1.jpg"/></div>
 
 （一起做Showcase的马来西亚小哥哥帮我拍的哈哈哈，直男拍照）
 
