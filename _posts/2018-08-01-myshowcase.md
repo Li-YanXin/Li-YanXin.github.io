@@ -23,7 +23,7 @@ tags:
 
 Showcase现场，大家热情都很高。
 
-  <img width="550" height="450" src="/img/in-post/showcase_1.jpg" style="transform:rotate(90deg);"> 
+  <img width="50%" height="50%" src="/img/in-post/showcase_1.jpg" style="transform:rotate(90deg);"> 
 
 （一起做Showcase的马来西亚小哥哥帮我拍的哈哈哈，直男拍照）
 
