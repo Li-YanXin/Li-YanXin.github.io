@@ -23,27 +23,31 @@ VHDL FPGA学习
   * 对于非2^N分频，我们可以直接设计一个计数器，控制时钟的翻转。假设我们要设计一个N倍分频，当计数器计数到N/2 - 1时，翻转时钟即可。   
 	例如一个10分频电路： 
   <div align=center><img width="250" height="250" src="/img/10_div_1.jpg"/></div>  
+  
   <div align=center><img width="250" height="250" src="/img/10_div_2.jpg"/></div>  
   
   产生一个周期为10的计数器，在count = 4的时候翻转即可。  
   
   * 对于2^N分频，我们可以直接使用二进制位翻转  
   <div align=center><img width="250" height="250" src="/img/2_div_1.jpg"/></div>  
+  
   <div align=center><img width="250" height="250" src="/img/2_div_2.jpg"/></div>  
   
   对2，4，8分频，我们直接利用计数器的第0，1，2位翻转即可。
   
 ## 奇数分频
   奇数分频相对偶数分频要难一些。
-  以3分频为例，我们可以采用上升沿和下降沿产生两个时钟相与的方法产生。  
+  以3分频为例，我们可以采用上升沿和下降沿产生两个时钟相与的方法产生。   
   
-  <div align=center><img width="250" height="250" src="/img/3_div.png"/></div>
+  <div align=center><img width="250" height="250" src="/img/3_div.png"/></div>  
+  
+  如上图所示，在上升沿和下降沿各产生一个3分频信号，每个占空比为2：4，但由于时钟交错了半个clock，相与以后就是占空比50%的时钟了！  
 	
-	如上图所示，在上升沿和下降沿各产生一个3分频信号，每个占空比为2：4，但由于时钟交错了半个clock，相与以后就是占空比50%的时钟了！
+	<div align=center><img width="250" height="250" src="/img/3_div_1.jpg"/></div>  
 	
-	<div align=center><img width="250" height="250" src="/img/3_div_1.jpg"/></div>
-	<div align=center><img width="250" height="250" src="/img/3_div_2.jpg"/></div>
-	<div align=center><img width="250" height="250" src="/img/3_div_3.jpg"/></div>
+	<div align=center><img width="250" height="250" src="/img/3_div_2.jpg"/></div>  
+	
+	<div align=center><img width="250" height="250" src="/img/3_div_3.jpg"/></div>  
 	
 	类似得，我们可以将算法推广到5分频，只要计数器循环范围改为000-100，clk1在001和011处的上升沿翻转（占2个数，即两个时钟），
 	clk2在001和011处的下降沿翻转（比clk1提前半个时钟），再相与（相当于2个时钟 + 半个时钟 = 2.5个时钟 = 5/2）就可以了。  
